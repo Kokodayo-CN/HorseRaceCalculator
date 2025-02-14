@@ -7,7 +7,7 @@ The calculator will also process and suggest the most secure horse with the high
 Player can use the calculated results to get a better picture of the current race, instead of being stuck on abstract odd figures.  
 
 ## How to use it?  
-Simply head to "Release" and download the executable file from the latest release. You can then run the calculator directly. No installation required.  
+Simply head to "Release" and download the zip file from the latest release. You can then run the calculator directly in the uncompressed folder. No installation required, and no Internet connection required.  
 
 ## Whan it CANNOT do?  
 This calculator can only calculate the actual **POSSIBILITIES** of winning for each race. It **DOES NOT** guarantee that the horse with the highest possibility of winning will actually win.  
