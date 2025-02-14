@@ -184,6 +184,10 @@
             this.label61 = new System.Windows.Forms.Label();
             this.h1P = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.menu = new System.Windows.Forms.MenuStrip();
+            this.accessList = new System.Windows.Forms.ToolStripMenuItem();
+            this.reset = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -224,21 +228,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.horse1Odd)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel19.SuspendLayout();
+            this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 466F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1076F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1542, 1079);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1079F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1542, 1064);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -2035,20 +2042,71 @@
             this.label62.TabIndex = 13;
             this.label62.Text = "Payout";
             // 
+            // toolStripContainer1
+            // 
+            this.toolStripContainer1.BottomToolStripPanelVisible = false;
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.AutoScroll = true;
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1542, 1064);
+            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStripContainer1.LeftToolStripPanelVisible = false;
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 53);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.RightToolStripPanelVisible = false;
+            this.toolStripContainer1.Size = new System.Drawing.Size(1542, 1064);
+            this.toolStripContainer1.TabIndex = 1;
+            this.toolStripContainer1.Text = "toolStripContainer1";
+            this.toolStripContainer1.TopToolStripPanelVisible = false;
+            // 
+            // menu
+            // 
+            this.menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menu.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accessList,
+            this.reset});
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(1542, 53);
+            this.menu.Stretch = false;
+            this.menu.TabIndex = 2;
+            this.menu.Text = "Menu";
+            // 
+            // accessList
+            // 
+            this.accessList.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accessList.Name = "accessList";
+            this.accessList.Size = new System.Drawing.Size(350, 49);
+            this.accessList.Text = "Full List of Horse Pool";
+            this.accessList.Click += new System.EventHandler(this.showList);
+            // 
+            // reset
+            // 
+            this.reset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(117, 49);
+            this.reset.Text = "Reset";
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1542, 1079);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1542, 1117);
+            this.Controls.Add(this.toolStripContainer1);
+            this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menu;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1568, 1150);
-            this.MinimumSize = new System.Drawing.Size(1568, 1150);
+            this.MaximumSize = new System.Drawing.Size(1568, 1188);
+            this.MinimumSize = new System.Drawing.Size(1568, 1188);
             this.Name = "Calculator";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Horse Racing Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.exiting);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
@@ -2119,7 +2177,13 @@
             this.panel13.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
+            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.toolStripContainer1.ResumeLayout(false);
+            this.toolStripContainer1.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2280,6 +2344,10 @@
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.TextBox h1P;
         private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private System.Windows.Forms.MenuStrip menu;
+        private System.Windows.Forms.ToolStripMenuItem accessList;
+        private System.Windows.Forms.ToolStripMenuItem reset;
     }
 }
 

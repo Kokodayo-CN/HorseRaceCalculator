@@ -13,6 +13,8 @@ namespace HorseRaceCalculator
     public partial class Calculator : Form
     {
         double sum;
+        List<Horse> horses = new List<Horse>();
+        HorseList horseList = new HorseList();
 
         struct Horse
         {
@@ -33,9 +35,7 @@ namespace HorseRaceCalculator
                 this.payoutN = payoutN;
             }
         }
-
-        List<Horse> horses = new List<Horse>();
-
+        
         public Calculator()
         {
             InitializeComponent();
@@ -225,6 +225,19 @@ namespace HorseRaceCalculator
                 label82.ForeColor = Color.Black;
                 label83.ForeColor = Color.Black;
                 label85.ForeColor = Color.Black;
+            }
+        }
+
+        private void showList(object sender, EventArgs e)
+        {
+            horseList.Show();
+        }
+
+        private void exiting(object sender, FormClosingEventArgs e)
+        {
+            if (horseList.Visible)
+            {
+                horseList.Close();
             }
         }
 
