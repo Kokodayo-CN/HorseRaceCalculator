@@ -104,7 +104,7 @@ namespace HorseRaceCalculator
 
                 String errMsg = String.Join("\n", err);
 
-                DialogResult result = MessageBox.Show(errMsg, "Game Algorithm Violation", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show(errMsg, "Game Algorithm Violation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.No)
                 {
                     return;
@@ -235,6 +235,13 @@ namespace HorseRaceCalculator
 
         private void resetPressed(object sender, EventArgs e)
         {
+            DialogResult response = MessageBox.Show("Are you sure you want to reset all currently entered data?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            
+            if (response == DialogResult.No)
+            {
+                return;
+            }
+            
             panel26.BackColor = SystemColors.Control;
             panel27.BackColor = SystemColors.Control;
             panel28.BackColor = SystemColors.Control;
