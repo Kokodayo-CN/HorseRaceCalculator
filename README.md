@@ -1,5 +1,5 @@
 # GTA Online Horse Race Calculator  
-
+[![GitHub release (latest SemVer)](./releases/tag/v1.0.0)  
 ## What can it do?  
 This program can calculate the actual odds for winning in horse races on GTA Online, allowing players to make better decision based on staistical results.  
 Player is required to enter the odds of winning for all six horses. If the provided horse combination does not violate the game algorithm, the program will automatically calculate the actual odds of winning for each horse, and suggest the player whether this race is profitable or not.  
@@ -12,6 +12,9 @@ Simply head to "Release" and download the executable file from the latest releas
 ## Whan it CANNOT do?  
 This program can only calculate the actual **POSSIBILITIES** of winning for each race. It **DOES NOT** guarantee that the horse with the highest possibility of winning will actually win.  
 And in GTA Online, there is **NEVER** any guaranteed method allowing players to win every time, besides money glitches which often leads to account resets.  
+
+## Credits  
+Thanks to Reddit user [u/-Langseax-](https://www.reddit.com/user/-Langseax-/) and [u/UndreamedAges](https://www.reddit.com/user/UndreamedAges/) for posting and explaining how the horse races in GTA Online works in this [post](https://www.reddit.com/r/gtaonline/comments/1agaqjn/profitable_casino_horse_racing_inside_track_with/?rdt=49199).
 
 ## Important Notice Regarding Copyright  
 **Kokodayo-CN and it's affiliates have never granted Chinese Software Development Network (CSDN) and GitCode, including all affiliated or related personnels or entities, any permission to access, copy, download, execute, modify, migrate, adopt, repurpose, develop upon, pull requests, submit issues, participate in discussions or commit changes to any section of this repository, including any file derived from other repositories. Kokodayo-CN and owners of other repositories of which this repository is derived from or has reference to reserve the rights to protect their legal rights against unauthorized access. Violations of the clauses above will result in receiving a Cease-and-Desist Notice. The recipients, including all affiliated or related personnels or entities, are required to obligate and cease any mentioned activity in the notice within 14 days upon the Cease-and-Desist Notice is officially issued. Refusal to do so shall bear further legal actions. Please refer to the License Section 6 for detailed information.**
