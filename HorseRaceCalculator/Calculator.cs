@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HorseRaceCalculator
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
         double sum;
 
@@ -36,7 +36,7 @@ namespace HorseRaceCalculator
 
         List<Horse> horses = new List<Horse>();
 
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
 

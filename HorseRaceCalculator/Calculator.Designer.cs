@@ -1,6 +1,6 @@
 ﻿namespace HorseRaceCalculator
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -2034,7 +2034,7 @@
             this.label62.TabIndex = 13;
             this.label62.Text = "Payout";
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -2044,7 +2044,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1568, 1150);
             this.MinimumSize = new System.Drawing.Size(1568, 1150);
-            this.Name = "Form1";
+            this.Name = "Calculator";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Horse Racing Calculator";
             this.tableLayoutPanel1.ResumeLayout(false);
