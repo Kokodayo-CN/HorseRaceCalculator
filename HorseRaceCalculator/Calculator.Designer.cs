@@ -245,7 +245,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1079F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1542, 1064);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1542, 1060);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -2050,13 +2050,13 @@
             // 
             this.toolStripContainer1.ContentPanel.AutoScroll = true;
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1542, 1064);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1542, 1060);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 53);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 57);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(1542, 1064);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1542, 1060);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             this.toolStripContainer1.TopToolStripPanelVisible = false;
@@ -2070,7 +2070,7 @@
             this.reset});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1542, 53);
+            this.menu.Size = new System.Drawing.Size(1542, 57);
             this.menu.Stretch = false;
             this.menu.TabIndex = 2;
             this.menu.Text = "Menu";
@@ -2079,15 +2079,15 @@
             // 
             this.accessList.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accessList.Name = "accessList";
-            this.accessList.Size = new System.Drawing.Size(350, 49);
-            this.accessList.Text = "Full List of Horse Pool";
+            this.accessList.Size = new System.Drawing.Size(292, 53);
+            this.accessList.Text = "Full List of Horses";
             this.accessList.Click += new System.EventHandler(this.showList);
             // 
             // reset
             // 
             this.reset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(117, 49);
+            this.reset.Size = new System.Drawing.Size(117, 53);
             this.reset.Text = "Reset";
             this.reset.Click += new System.EventHandler(this.resetPressed);
             // 
