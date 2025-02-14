@@ -233,6 +233,40 @@ namespace HorseRaceCalculator
             horseList.Show();
         }
 
+        private void resetPressed(object sender, EventArgs e)
+        {
+            panel26.BackColor = SystemColors.Control;
+            panel27.BackColor = SystemColors.Control;
+            panel28.BackColor = SystemColors.Control;
+            result.BackColor = SystemColors.Control;
+            avgPerc.BackColor = SystemColors.Control;
+            avgNum.BackColor = SystemColors.Control;
+            result.ForeColor = Color.Black;
+            avgPerc.ForeColor = Color.Black;
+            avgNum.ForeColor = Color.Black;
+            label80.ForeColor = Color.Black;
+            label81.ForeColor = Color.Black;
+            label82.ForeColor = Color.Black;
+            label83.ForeColor = Color.Black;
+            label85.ForeColor = Color.Black;
+
+            result.Text = "TBD";
+            avgPerc.Text = "TBD";
+            avgNum.Text = "TBD";
+            resultAction.Text = "TBD";
+            resultHorse.Text = "TBD";
+            resultHorsePerc.Text = "TBD %";
+            resultPayout.Text = "TBD";
+            bet.Value = 100;
+
+            horse1Odd.Value = 1;
+            horse2Odd.Value = 1;
+            horse3Odd.Value = 1;
+            horse4Odd.Value = 1;
+            horse5Odd.Value = 1;
+            horse6Odd.Value = 1;
+        }
+
         private void exiting(object sender, FormClosingEventArgs e)
         {
             if (horseList.Visible)

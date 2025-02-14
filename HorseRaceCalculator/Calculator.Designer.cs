@@ -2089,6 +2089,7 @@
             this.reset.Name = "reset";
             this.reset.Size = new System.Drawing.Size(117, 49);
             this.reset.Text = "Reset";
+            this.reset.Click += new System.EventHandler(this.resetPressed);
             // 
             // Calculator
             // 
