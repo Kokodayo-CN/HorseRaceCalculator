@@ -1,5 +1,5 @@
 # GTA Online Horse Race Calculator  
-[![GitHub release (latest SemVer)](./releases/tag/v1.0.0)  
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ayufan/steam-deck-tools?label=stable&style=flat-square)](./releases/latest)
 ## What can it do?  
 This program can calculate the actual odds for winning in horse races on GTA Online, allowing players to make better decision based on staistical results.  
 Player is required to enter the odds of winning for all six horses. If the provided horse combination does not violate the game algorithm, the program will automatically calculate the actual odds of winning for each horse, and suggest the player whether this race is profitable or not.  
