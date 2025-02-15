@@ -173,57 +173,63 @@ namespace HorseRaceCalculator
                 }
 
                 panel26.BackColor = Color.Green;
-                panel27.BackColor = Color.Green;
-                panel28.BackColor = Color.Green;
-                result.BackColor = Color.Green;
-                avgPerc.BackColor = Color.Green;
-                avgNum.BackColor = Color.Green;
-                result.ForeColor = Color.White;
-                avgPerc.ForeColor = Color.White;
-                avgNum.ForeColor = Color.White;
                 label80.ForeColor = Color.White;
                 label81.ForeColor = Color.White;
+                result.BackColor = Color.Green;
+                result.ForeColor = Color.White;
+
+                panel27.BackColor = Color.Green;
                 label82.ForeColor = Color.White;
                 label83.ForeColor = Color.White;
+                avgPerc.BackColor = Color.Green;
+                avgPerc.ForeColor = Color.White;
+
+                panel28.BackColor = Color.Green;
                 label85.ForeColor = Color.White;
+                avgNum.BackColor = Color.Green;
+                avgNum.ForeColor = Color.White;
             }
             else if (result.Text == "Unprofitable")
             {
                 resultAction.Text = "Bet minimum";
 
                 panel26.BackColor = Color.Red;
-                panel27.BackColor = Color.Red;
-                panel28.BackColor = Color.Red;
-                result.BackColor = Color.Red;
-                avgPerc.BackColor = Color.Red;
-                avgNum.BackColor = Color.Red;
-                result.ForeColor = Color.White;
-                avgPerc.ForeColor = Color.White;
-                avgNum.ForeColor = Color.White;
                 label80.ForeColor = Color.White;
                 label81.ForeColor = Color.White;
+                result.BackColor = Color.Red;
+                result.ForeColor = Color.White;
+
+                panel27.BackColor = Color.Red;
                 label82.ForeColor = Color.White;
                 label83.ForeColor = Color.White;
+                avgPerc.BackColor = Color.Red;
+                avgPerc.ForeColor = Color.White;
+
+                panel28.BackColor = Color.Red;
                 label85.ForeColor = Color.White;
+                avgNum.BackColor = Color.Red;
+                avgNum.ForeColor = Color.White;
             }
             else
             {
                 resultAction.Text = "Bet minimum";
 
                 panel26.BackColor = SystemColors.Control;
-                panel27.BackColor = SystemColors.Control;
-                panel28.BackColor = SystemColors.Control;
-                result.BackColor = SystemColors.Control;
-                avgPerc.BackColor = SystemColors.Control;
-                avgNum.BackColor = SystemColors.Control;
-                result.ForeColor = Color.Black;
-                avgPerc.ForeColor = Color.Black;
-                avgNum.ForeColor = Color.Black;
                 label80.ForeColor = Color.Black;
                 label81.ForeColor = Color.Black;
+                result.BackColor = SystemColors.Control;
+                result.ForeColor = Color.Black;
+
+                panel27.BackColor = SystemColors.Control;
                 label82.ForeColor = Color.Black;
                 label83.ForeColor = Color.Black;
+                avgPerc.BackColor = SystemColors.Control;
+                avgPerc.ForeColor = Color.Black;
+
+                panel28.BackColor = SystemColors.Control;
                 label85.ForeColor = Color.Black;
+                avgNum.BackColor = SystemColors.Control;
+                avgNum.ForeColor = Color.Black;
             }
         }
 
