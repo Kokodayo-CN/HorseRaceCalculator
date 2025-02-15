@@ -7,27 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace HorseRaceCalculator
 {
     public partial class Calculator : Form
     {
-        double sum;
-        List<Horse> horses = new List<Horse>();
-        HorseList horseList = new HorseList();
+        private double sum;
+        private bool isUserAction = true;
+        private List<Horse> horses = new List<Horse>();
+        private HorseList horseList = new HorseList();
+        private Dictionary<string, byte> horsePool = HorsePool.Initialize();
+        private Dictionary<RichTextBox, Horse> horseName = new Dictionary<RichTextBox, Horse>();
 
         struct Horse
         {
             public String id;
+            public RichTextBox name;
             public NumericUpDown odd;
             public TextBox fake;
             public TextBox actual;
             public TextBox payout;
             public TextBox payoutN;
 
-            public Horse(String id, NumericUpDown odd, TextBox fake, TextBox actual, TextBox payout, TextBox payoutN)
+            public Horse(String id, RichTextBox name, NumericUpDown odd, TextBox fake, TextBox actual, TextBox payout, TextBox payoutN)
             {
                 this.id = id;
+                this.name = name;
                 this.odd = odd;
                 this.fake = fake;
                 this.actual = actual;
@@ -40,13 +46,26 @@ namespace HorseRaceCalculator
         {
             InitializeComponent();
 
-            horses.Add(new Horse("Horse 1", horse1Odd, h1F, h1A, h1P, h1PN));
-            horses.Add(new Horse("Horse 2", horse2Odd, h2F, h2A, h2P, h2PN));
-            horses.Add(new Horse("Horse 3", horse3Odd, h3F, h3A, h3P, h3PN));
-            horses.Add(new Horse("Horse 4", horse4Odd, h4F, h4A, h4P, h4PN));
-            horses.Add(new Horse("Horse 5", horse5Odd, h5F, h5A, h5P, h5PN));
-            horses.Add(new Horse("Horse 6", horse6Odd, h6F, h6A, h6P, h6PN));
-            
+            horses.Add(new Horse("Horse 1", horse1Name, horse1Odd, h1F, h1A, h1P, h1PN));
+            horses.Add(new Horse("Horse 2", horse2Name, horse2Odd, h2F, h2A, h2P, h2PN));
+            horses.Add(new Horse("Horse 3", horse3Name, horse3Odd, h3F, h3A, h3P, h3PN));
+            horses.Add(new Horse("Horse 4", horse4Name, horse4Odd, h4F, h4A, h4P, h4PN));
+            horses.Add(new Horse("Horse 5", horse5Name, horse5Odd, h5F, h5A, h5P, h5PN));
+            horses.Add(new Horse("Horse 6", horse6Name, horse6Odd, h6F, h6A, h6P, h6PN));
+
+            horseName.Add(horse1Name, horses[0]);
+            horseName.Add(horse2Name, horses[1]);
+            horseName.Add(horse3Name, horses[2]);
+            horseName.Add(horse4Name, horses[3]);
+            horseName.Add(horse5Name, horses[4]);
+            horseName.Add(horse6Name, horses[5]);
+
+            foreach (KeyValuePair<RichTextBox, Horse> pair in horseName)
+            {
+                pair.Key.Text = "NOT SPECIFIED";
+                align(pair.Key, new EventArgs());
+            }
+
             getFakePossibility();
             getSum();
             getPossibility();
@@ -55,6 +74,14 @@ namespace HorseRaceCalculator
 
         private void oddValueChanged(object sender, EventArgs e)
         {
+            if (isUserAction)
+            {
+                foreach (KeyValuePair<RichTextBox, Horse> pair in horseName)
+                {
+                    pair.Key.Text = "NOT SPECIFIED";
+                }
+            }
+
             getFakePossibility();
             getSum();
             getPossibility();
@@ -238,6 +265,25 @@ namespace HorseRaceCalculator
             horseList.Show();
         }
 
+        private void selectHorse(object sender, EventArgs e)
+        {
+            RichTextBox textBox = sender as RichTextBox;
+            HorseSelection subForm = new HorseSelection(horsePool, horseName[textBox].id);
+
+            subForm.FormClosing += delegate
+            {
+                if (subForm.DialogResult == DialogResult.OK)
+                {
+                    isUserAction = false;
+                    textBox.Text = subForm.horseSelected;
+                    horseName[textBox].odd.Value = horsePool[subForm.horseSelected];
+                    isUserAction = true;
+                }
+            };
+
+            subForm.Show();
+        }
+
         private void resetPressed(object sender, EventArgs e)
         {
             DialogResult response = MessageBox.Show("Are you sure you want to reset all currently entered data?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -277,6 +323,39 @@ namespace HorseRaceCalculator
             horse4Odd.Value = 1;
             horse5Odd.Value = 1;
             horse6Odd.Value = 1;
+        }
+
+        private void align(object sender, EventArgs e)
+        {
+            RichTextBox box = sender as RichTextBox;
+
+            if (box.Lines.Length == 1)
+            {
+                string[] text = box.Text.Split(' ');
+                if (text.Length == 2)
+                {
+                    box.Text = text[0] + "\n" + text[1];
+                }
+                else if (text.Length == 4)
+                {
+                    box.Text = text[0] + " " + text[1] + "\n" + text[2] + " " + text[3];
+                }
+                else
+                {
+                    if (text[0].Length <= text[2].Length)
+                    {
+                        box.Text = text[0] + " " + text[1] + "\n" + text[2];
+                    }
+                    else
+                    {
+                        box.Text = text[0] + "\n" + text[1] + " " + text[2];
+                    }
+                }
+            }
+
+            box.SelectAll();
+            box.SelectionAlignment = HorizontalAlignment.Center;
+            box.DeselectAll();
         }
 
         private void exiting(object sender, FormClosingEventArgs e)
