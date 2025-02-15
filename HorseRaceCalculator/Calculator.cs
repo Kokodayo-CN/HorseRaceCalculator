@@ -12,9 +12,9 @@ namespace HorseRaceCalculator
 {
     public partial class Calculator : Form
     {
-        double sum;
-        List<Horse> horses = new List<Horse>();
-        HorseList horseList = new HorseList();
+        private double sum;
+        private List<Horse> horses = new List<Horse>();
+        private HorseList horseList = new HorseList();
         private Dictionary<string, byte> horsePool = HorsePool.Initialize();
 
         struct Horse
@@ -237,6 +237,12 @@ namespace HorseRaceCalculator
         private void showList(object sender, EventArgs e)
         {
             horseList.Show();
+        }
+
+        private void selectHorse(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            HorseSelection subForm = new HorseSelection(horsePool, textBox.Text);
         }
 
         private void resetPressed(object sender, EventArgs e)

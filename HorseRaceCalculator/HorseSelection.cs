@@ -12,9 +12,18 @@ namespace HorseRaceCalculator
 {
     public partial class HorseSelection : Form
     {
-        public HorseSelection(Dictionary<string, byte> horses)
+        public string horseSelected;
+
+        public HorseSelection(Dictionary<string, byte> horses, string Namespace)
         {
             InitializeComponent();
+
+            label2.Text = Namespace;
+            comboBox1.Text = "";
+            textBox1.Text = "";
+            textBox2.Text = "";
+
+            comboBox1.Items.AddRange(horses.Keys.ToArray());
         }
     }
 }
