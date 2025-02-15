@@ -30,43 +30,44 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HorseSelection));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.horseDropBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.horseTag = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.horseTier = new System.Windows.Forms.TextBox();
+            this.horseOdd = new System.Windows.Forms.TextBox();
+            this.comfirm = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.comfirm);
+            this.panel1.Controls.Add(this.horseOdd);
+            this.panel1.Controls.Add(this.horseTier);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.horseTag);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.horseDropBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 491);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // horseDropBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(33, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(735, 50);
-            this.comboBox1.TabIndex = 0;
+            this.horseDropBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseDropBox.FormattingEnabled = true;
+            this.horseDropBox.Location = new System.Drawing.Point(33, 105);
+            this.horseDropBox.Name = "horseDropBox";
+            this.horseDropBox.Size = new System.Drawing.Size(735, 50);
+            this.horseDropBox.TabIndex = 0;
+            this.horseDropBox.SelectedIndexChanged += new System.EventHandler(this.selected);
             // 
             // label1
             // 
@@ -78,21 +79,21 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Select Horse for ";
             // 
-            // label2
+            // horseTag
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(467, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 51);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Horse 1";
+            this.horseTag.AutoSize = true;
+            this.horseTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseTag.Location = new System.Drawing.Point(467, 25);
+            this.horseTag.Name = "horseTag";
+            this.horseTag.Size = new System.Drawing.Size(172, 51);
+            this.horseTag.TabIndex = 2;
+            this.horseTag.Text = "Horse 1";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(205, 170);
+            this.label3.Location = new System.Drawing.Point(211, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(383, 42);
             this.label3.TabIndex = 3;
@@ -102,7 +103,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(419, 233);
+            this.label4.Location = new System.Drawing.Point(425, 233);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(344, 42);
             this.label4.TabIndex = 4;
@@ -112,39 +113,41 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(120, 233);
+            this.label5.Location = new System.Drawing.Point(117, 233);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(202, 42);
             this.label5.TabIndex = 5;
             this.label5.Text = "Horse Tier:";
             // 
-            // textBox1
+            // horseTier
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(146, 291);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(139, 49);
-            this.textBox1.TabIndex = 6;
+            this.horseTier.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseTier.Location = new System.Drawing.Point(119, 291);
+            this.horseTier.Name = "horseTier";
+            this.horseTier.ReadOnly = true;
+            this.horseTier.Size = new System.Drawing.Size(195, 49);
+            this.horseTier.TabIndex = 6;
+            this.horseTier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // horseOdd
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(517, 291);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(139, 49);
-            this.textBox2.TabIndex = 7;
+            this.horseOdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseOdd.Location = new System.Drawing.Point(498, 291);
+            this.horseOdd.Name = "horseOdd";
+            this.horseOdd.ReadOnly = true;
+            this.horseOdd.Size = new System.Drawing.Size(195, 49);
+            this.horseOdd.TabIndex = 7;
+            this.horseOdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // comfirm
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(212, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(376, 90);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Save && Return";
-            this.button1.UseVisualStyleBackColor = true;
+            this.comfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comfirm.Location = new System.Drawing.Point(212, 378);
+            this.comfirm.Name = "comfirm";
+            this.comfirm.Size = new System.Drawing.Size(376, 90);
+            this.comfirm.TabIndex = 8;
+            this.comfirm.Text = "Save && Return";
+            this.comfirm.UseVisualStyleBackColor = true;
             // 
             // HorseSelection
             // 
@@ -165,13 +168,13 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox horseDropBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label horseTag;
+        private System.Windows.Forms.TextBox horseOdd;
+        private System.Windows.Forms.TextBox horseTier;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button comfirm;
     }
 }
