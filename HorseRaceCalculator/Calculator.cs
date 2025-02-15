@@ -14,6 +14,7 @@ namespace HorseRaceCalculator
     public partial class Calculator : Form
     {
         private double sum;
+        private bool isUserAction = true;
         private List<Horse> horses = new List<Horse>();
         private HorseList horseList = new HorseList();
         private Dictionary<string, byte> horsePool = HorsePool.Initialize();
@@ -67,6 +68,14 @@ namespace HorseRaceCalculator
 
         private void oddValueChanged(object sender, EventArgs e)
         {
+            if (isUserAction)
+            {
+                foreach (KeyValuePair<RichTextBox, Horse> pair in horseName)
+                {
+                    pair.Key.Text = "";
+                }
+            }
+
             getFakePossibility();
             getSum();
             getPossibility();
@@ -259,7 +268,10 @@ namespace HorseRaceCalculator
             {
                 if (subForm.DialogResult == DialogResult.OK)
                 {
+                    isUserAction = false;
                     textBox.Text = subForm.horseSelected;
+                    horseName[textBox].odd.Value = horsePool[subForm.horseSelected];
+                    isUserAction = true;
                 }
             };
 

@@ -660,8 +660,8 @@
             this.horse6Name.Size = new System.Drawing.Size(172, 69);
             this.horse6Name.TabIndex = 41;
             this.horse6Name.Text = "";
+            this.horse6Name.Click += new System.EventHandler(this.selectHorse);
             this.horse6Name.TextChanged += new System.EventHandler(this.align);
-            this.horse6Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse5Name
             // 
@@ -677,8 +677,8 @@
             this.horse5Name.Size = new System.Drawing.Size(171, 69);
             this.horse5Name.TabIndex = 40;
             this.horse5Name.Text = "";
+            this.horse5Name.Click += new System.EventHandler(this.selectHorse);
             this.horse5Name.TextChanged += new System.EventHandler(this.align);
-            this.horse5Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse4Name
             // 
@@ -694,8 +694,8 @@
             this.horse4Name.Size = new System.Drawing.Size(171, 69);
             this.horse4Name.TabIndex = 39;
             this.horse4Name.Text = "";
+            this.horse4Name.Click += new System.EventHandler(this.selectHorse);
             this.horse4Name.TextChanged += new System.EventHandler(this.align);
-            this.horse4Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse3Name
             // 
@@ -711,8 +711,8 @@
             this.horse3Name.Size = new System.Drawing.Size(171, 69);
             this.horse3Name.TabIndex = 38;
             this.horse3Name.Text = "";
+            this.horse3Name.Click += new System.EventHandler(this.selectHorse);
             this.horse3Name.TextChanged += new System.EventHandler(this.align);
-            this.horse3Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse2Name
             // 
@@ -728,8 +728,8 @@
             this.horse2Name.Size = new System.Drawing.Size(171, 69);
             this.horse2Name.TabIndex = 37;
             this.horse2Name.Text = "";
+            this.horse2Name.Click += new System.EventHandler(this.selectHorse);
             this.horse2Name.TextChanged += new System.EventHandler(this.align);
-            this.horse2Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // panel24
             // 
@@ -2161,8 +2161,8 @@
             this.horse1Name.Size = new System.Drawing.Size(171, 69);
             this.horse1Name.TabIndex = 36;
             this.horse1Name.Text = "";
+            this.horse1Name.Click += new System.EventHandler(this.selectHorse);
             this.horse1Name.TextChanged += new System.EventHandler(this.align);
-            this.horse1Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // toolStripContainer1
             // 
