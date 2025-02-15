@@ -135,7 +135,6 @@ namespace HorseRaceCalculator
             Horse selected = horses[0];
             Horse backup = horses[0];
             double selectedPerc = 0;
-            double backupPerc = 0;
 
             foreach (Horse horse in horses)
             {

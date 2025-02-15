@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HorseList));
             this.lo = new System.Windows.Forms.TabPage();
+            this.lowH = new System.Windows.Forms.DataGridView();
             this.mid = new System.Windows.Forms.TabPage();
+            this.midH = new System.Windows.Forms.DataGridView();
             this.hi = new System.Windows.Forms.TabPage();
+            this.highH = new System.Windows.Forms.DataGridView();
             this.all = new System.Windows.Forms.TabPage();
             this.full = new System.Windows.Forms.DataGridView();
             this.horses = new System.Windows.Forms.TabControl();
-            this.highH = new System.Windows.Forms.DataGridView();
-            this.midH = new System.Windows.Forms.DataGridView();
-            this.lowH = new System.Windows.Forms.DataGridView();
             this.lo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lowH)).BeginInit();
             this.mid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.midH)).BeginInit();
             this.hi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.highH)).BeginInit();
             this.all.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.full)).BeginInit();
             this.horses.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.highH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.midH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lowH)).BeginInit();
             this.SuspendLayout();
             // 
             // lo
@@ -60,6 +60,18 @@
             this.lo.Text = "Low-Tier";
             this.lo.UseVisualStyleBackColor = true;
             // 
+            // lowH
+            // 
+            this.lowH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lowH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lowH.Location = new System.Drawing.Point(3, 3);
+            this.lowH.Name = "lowH";
+            this.lowH.RowHeadersWidth = 82;
+            this.lowH.RowTemplate.Height = 33;
+            this.lowH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.lowH.Size = new System.Drawing.Size(484, 940);
+            this.lowH.TabIndex = 1;
+            // 
             // mid
             // 
             this.mid.Controls.Add(this.midH);
@@ -71,6 +83,18 @@
             this.mid.Text = "Mid-Tier";
             this.mid.UseVisualStyleBackColor = true;
             // 
+            // midH
+            // 
+            this.midH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.midH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.midH.Location = new System.Drawing.Point(3, 3);
+            this.midH.Name = "midH";
+            this.midH.RowHeadersWidth = 82;
+            this.midH.RowTemplate.Height = 33;
+            this.midH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.midH.Size = new System.Drawing.Size(484, 940);
+            this.midH.TabIndex = 1;
+            // 
             // hi
             // 
             this.hi.Controls.Add(this.highH);
@@ -81,6 +105,18 @@
             this.hi.TabIndex = 1;
             this.hi.Text = "High-Tier";
             this.hi.UseVisualStyleBackColor = true;
+            // 
+            // highH
+            // 
+            this.highH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.highH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.highH.Location = new System.Drawing.Point(3, 3);
+            this.highH.Name = "highH";
+            this.highH.RowHeadersWidth = 82;
+            this.highH.RowTemplate.Height = 33;
+            this.highH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.highH.Size = new System.Drawing.Size(484, 940);
+            this.highH.TabIndex = 1;
             // 
             // all
             // 
@@ -118,42 +154,6 @@
             this.horses.Size = new System.Drawing.Size(506, 993);
             this.horses.TabIndex = 0;
             // 
-            // highH
-            // 
-            this.highH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.highH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.highH.Location = new System.Drawing.Point(3, 3);
-            this.highH.Name = "highH";
-            this.highH.RowHeadersWidth = 82;
-            this.highH.RowTemplate.Height = 33;
-            this.highH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.highH.Size = new System.Drawing.Size(484, 940);
-            this.highH.TabIndex = 1;
-            // 
-            // midH
-            // 
-            this.midH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.midH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.midH.Location = new System.Drawing.Point(3, 3);
-            this.midH.Name = "midH";
-            this.midH.RowHeadersWidth = 82;
-            this.midH.RowTemplate.Height = 33;
-            this.midH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.midH.Size = new System.Drawing.Size(484, 940);
-            this.midH.TabIndex = 1;
-            // 
-            // lowH
-            // 
-            this.lowH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lowH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lowH.Location = new System.Drawing.Point(3, 3);
-            this.lowH.Name = "lowH";
-            this.lowH.RowHeadersWidth = 82;
-            this.lowH.RowTemplate.Height = 33;
-            this.lowH.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.lowH.Size = new System.Drawing.Size(484, 940);
-            this.lowH.TabIndex = 1;
-            // 
             // HorseList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -162,16 +162,16 @@
             this.Controls.Add(this.horses);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HorseList";
-            this.Text = "HorseList";
+            this.Text = "Full Horse List";
             this.lo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lowH)).EndInit();
             this.mid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.midH)).EndInit();
             this.hi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.highH)).EndInit();
             this.all.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.full)).EndInit();
             this.horses.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.highH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.midH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lowH)).EndInit();
             this.ResumeLayout(false);
 
         }

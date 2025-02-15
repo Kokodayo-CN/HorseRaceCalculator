@@ -13,25 +13,11 @@ namespace HorseRaceCalculator
 {
     public partial class HorseList : Form
     {
-        private Dictionary<string, byte> horsePool = new Dictionary<string, byte>();
+        private Dictionary<string, byte> horsePool = HorsePool.Initialize();
 
         public HorseList()
         {
             InitializeComponent();
-
-            using (StreamReader file = new StreamReader(File.OpenRead("./Assets/list.csv")))
-            {
-                string horse;
-                do
-                {
-                    horse = file.ReadLine();
-                    if (horse != null)
-                    {
-                        string[] horseInfo = horse.Split(',');
-                        horsePool.Add(horseInfo[0], byte.Parse(horseInfo[1]));
-                    }
-                } while (horse != null);
-            }
 
             DataTable horseList = new DataTable("Horse List");
             DataTable lowHorse = new DataTable("Low-Tier Horse");
