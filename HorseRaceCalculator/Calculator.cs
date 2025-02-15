@@ -60,6 +60,12 @@ namespace HorseRaceCalculator
             horseName.Add(horse5Name, horses[4]);
             horseName.Add(horse6Name, horses[5]);
 
+            foreach (KeyValuePair<RichTextBox, Horse> pair in horseName)
+            {
+                pair.Key.Text = "NOT SPECIFIED";
+                align(pair.Key, new EventArgs());
+            }
+
             getFakePossibility();
             getSum();
             getPossibility();
@@ -72,7 +78,7 @@ namespace HorseRaceCalculator
             {
                 foreach (KeyValuePair<RichTextBox, Horse> pair in horseName)
                 {
-                    pair.Key.Text = "";
+                    pair.Key.Text = "NOT SPECIFIED";
                 }
             }
 
