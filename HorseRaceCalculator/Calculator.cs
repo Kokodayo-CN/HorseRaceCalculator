@@ -279,12 +279,18 @@ namespace HorseRaceCalculator
             horse6Odd.Value = 1;
         }
 
+        private void opening(object sender, EventArgs e)
+        {
+            Initialize.OnStartup();
+        }
+
         private void exiting(object sender, FormClosingEventArgs e)
         {
             if (horseList.Visible)
             {
                 horseList.Close();
             }
+            Initialize.OnShutdown();
         }
 
         private void getFakePossibility()
