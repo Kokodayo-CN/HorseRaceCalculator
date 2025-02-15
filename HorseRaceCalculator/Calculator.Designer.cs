@@ -58,6 +58,11 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.horse6Name = new System.Windows.Forms.TextBox();
+            this.horse5Name = new System.Windows.Forms.TextBox();
+            this.horse4Name = new System.Windows.Forms.TextBox();
+            this.horse3Name = new System.Windows.Forms.TextBox();
+            this.horse2Name = new System.Windows.Forms.TextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.h6PN = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
@@ -184,16 +189,11 @@
             this.label61 = new System.Windows.Forms.Label();
             this.h1P = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
+            this.horse1Name = new System.Windows.Forms.TextBox();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.accessList = new System.Windows.Forms.ToolStripMenuItem();
             this.reset = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -296,6 +296,7 @@
             // 
             // bet
             // 
+            this.bet.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bet.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bet.Increment = new decimal(new int[] {
             100,
@@ -326,6 +327,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(4, 219);
@@ -595,11 +597,11 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel4.Controls.Add(this.textBox6, 5, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox5, 4, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox4, 3, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox3, 2, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.horse6Name, 5, 1);
+            this.tableLayoutPanel4.Controls.Add(this.horse5Name, 4, 1);
+            this.tableLayoutPanel4.Controls.Add(this.horse4Name, 3, 1);
+            this.tableLayoutPanel4.Controls.Add(this.horse3Name, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.horse2Name, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel24, 5, 5);
             this.tableLayoutPanel4.Controls.Add(this.panel23, 4, 5);
             this.tableLayoutPanel4.Controls.Add(this.panel22, 3, 5);
@@ -630,7 +632,7 @@
             this.tableLayoutPanel4.Controls.Add(this.panel1, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.panel13, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.panel19, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.horse1Name, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(469, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -644,6 +646,76 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1070, 1158);
             this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // horse6Name
+            // 
+            this.horse6Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse6Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.horse6Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse6Name.Location = new System.Drawing.Point(894, 85);
+            this.horse6Name.Multiline = true;
+            this.horse6Name.Name = "horse6Name";
+            this.horse6Name.ReadOnly = true;
+            this.horse6Name.Size = new System.Drawing.Size(172, 74);
+            this.horse6Name.TabIndex = 41;
+            this.horse6Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse6Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            // 
+            // horse5Name
+            // 
+            this.horse5Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse5Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.horse5Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse5Name.Location = new System.Drawing.Point(716, 85);
+            this.horse5Name.Multiline = true;
+            this.horse5Name.Name = "horse5Name";
+            this.horse5Name.ReadOnly = true;
+            this.horse5Name.Size = new System.Drawing.Size(171, 74);
+            this.horse5Name.TabIndex = 40;
+            this.horse5Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse5Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            // 
+            // horse4Name
+            // 
+            this.horse4Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse4Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.horse4Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse4Name.Location = new System.Drawing.Point(538, 85);
+            this.horse4Name.Multiline = true;
+            this.horse4Name.Name = "horse4Name";
+            this.horse4Name.ReadOnly = true;
+            this.horse4Name.Size = new System.Drawing.Size(171, 74);
+            this.horse4Name.TabIndex = 39;
+            this.horse4Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse4Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            // 
+            // horse3Name
+            // 
+            this.horse3Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse3Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.horse3Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse3Name.Location = new System.Drawing.Point(360, 85);
+            this.horse3Name.Multiline = true;
+            this.horse3Name.Name = "horse3Name";
+            this.horse3Name.ReadOnly = true;
+            this.horse3Name.Size = new System.Drawing.Size(171, 74);
+            this.horse3Name.TabIndex = 38;
+            this.horse3Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse3Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            // 
+            // horse2Name
+            // 
+            this.horse2Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse2Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.horse2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse2Name.Location = new System.Drawing.Point(182, 85);
+            this.horse2Name.Multiline = true;
+            this.horse2Name.Name = "horse2Name";
+            this.horse2Name.ReadOnly = true;
+            this.horse2Name.Size = new System.Drawing.Size(171, 74);
+            this.horse2Name.TabIndex = 37;
+            this.horse2Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse2Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
             // 
             // panel24
             // 
@@ -1511,6 +1583,7 @@
             // 
             // horse6Odd
             // 
+            this.horse6Odd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.horse6Odd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horse6Odd.Location = new System.Drawing.Point(21, 130);
             this.horse6Odd.Maximum = new decimal(new int[] {
@@ -1578,6 +1651,7 @@
             // 
             // horse5Odd
             // 
+            this.horse5Odd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.horse5Odd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horse5Odd.Location = new System.Drawing.Point(21, 130);
             this.horse5Odd.Maximum = new decimal(new int[] {
@@ -1645,6 +1719,7 @@
             // 
             // horse4Odd
             // 
+            this.horse4Odd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.horse4Odd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horse4Odd.Location = new System.Drawing.Point(21, 130);
             this.horse4Odd.Maximum = new decimal(new int[] {
@@ -1712,6 +1787,7 @@
             // 
             // horse3Odd
             // 
+            this.horse3Odd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.horse3Odd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horse3Odd.Location = new System.Drawing.Point(21, 130);
             this.horse3Odd.Maximum = new decimal(new int[] {
@@ -1779,6 +1855,7 @@
             // 
             // horse2Odd
             // 
+            this.horse2Odd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.horse2Odd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horse2Odd.Location = new System.Drawing.Point(21, 130);
             this.horse2Odd.Maximum = new decimal(new int[] {
@@ -1918,6 +1995,7 @@
             // 
             // horse1Odd
             // 
+            this.horse1Odd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.horse1Odd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horse1Odd.Location = new System.Drawing.Point(21, 130);
             this.horse1Odd.Maximum = new decimal(new int[] {
@@ -2055,6 +2133,20 @@
             this.label62.TabIndex = 13;
             this.label62.Text = "Payout";
             // 
+            // horse1Name
+            // 
+            this.horse1Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse1Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.horse1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse1Name.Location = new System.Drawing.Point(4, 85);
+            this.horse1Name.Multiline = true;
+            this.horse1Name.Name = "horse1Name";
+            this.horse1Name.ReadOnly = true;
+            this.horse1Name.Size = new System.Drawing.Size(171, 74);
+            this.horse1Name.TabIndex = 36;
+            this.horse1Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse1Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            // 
             // toolStripContainer1
             // 
             this.toolStripContainer1.BottomToolStripPanelVisible = false;
@@ -2103,66 +2195,6 @@
             this.reset.Size = new System.Drawing.Size(117, 49);
             this.reset.Text = "Reset";
             this.reset.Click += new System.EventHandler(this.resetPressed);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(4, 85);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(171, 74);
-            this.textBox1.TabIndex = 36;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(182, 85);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(171, 74);
-            this.textBox2.TabIndex = 37;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(360, 85);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(171, 74);
-            this.textBox3.TabIndex = 38;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(538, 85);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(171, 74);
-            this.textBox4.TabIndex = 39;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(716, 85);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(171, 74);
-            this.textBox5.TabIndex = 40;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(894, 85);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(172, 74);
-            this.textBox6.TabIndex = 41;
             // 
             // Calculator
             // 
@@ -2422,12 +2454,12 @@
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem accessList;
         private System.Windows.Forms.ToolStripMenuItem reset;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox horse6Name;
+        private System.Windows.Forms.TextBox horse5Name;
+        private System.Windows.Forms.TextBox horse3Name;
+        private System.Windows.Forms.TextBox horse2Name;
+        private System.Windows.Forms.TextBox horse1Name;
+        private System.Windows.Forms.TextBox horse4Name;
     }
 }
 

@@ -16,19 +16,22 @@ namespace HorseRaceCalculator
         private List<Horse> horses = new List<Horse>();
         private HorseList horseList = new HorseList();
         private Dictionary<string, byte> horsePool = HorsePool.Initialize();
+        private Dictionary<TextBox, Horse> horseName = new Dictionary<TextBox, Horse>();
 
         struct Horse
         {
             public String id;
+            public TextBox name;
             public NumericUpDown odd;
             public TextBox fake;
             public TextBox actual;
             public TextBox payout;
             public TextBox payoutN;
 
-            public Horse(String id, NumericUpDown odd, TextBox fake, TextBox actual, TextBox payout, TextBox payoutN)
+            public Horse(String id, TextBox name, NumericUpDown odd, TextBox fake, TextBox actual, TextBox payout, TextBox payoutN)
             {
                 this.id = id;
+                this.name = name;
                 this.odd = odd;
                 this.fake = fake;
                 this.actual = actual;
@@ -41,13 +44,20 @@ namespace HorseRaceCalculator
         {
             InitializeComponent();
 
-            horses.Add(new Horse("Horse 1", horse1Odd, h1F, h1A, h1P, h1PN));
-            horses.Add(new Horse("Horse 2", horse2Odd, h2F, h2A, h2P, h2PN));
-            horses.Add(new Horse("Horse 3", horse3Odd, h3F, h3A, h3P, h3PN));
-            horses.Add(new Horse("Horse 4", horse4Odd, h4F, h4A, h4P, h4PN));
-            horses.Add(new Horse("Horse 5", horse5Odd, h5F, h5A, h5P, h5PN));
-            horses.Add(new Horse("Horse 6", horse6Odd, h6F, h6A, h6P, h6PN));
-            
+            horses.Add(new Horse("Horse 1", horse1Name, horse1Odd, h1F, h1A, h1P, h1PN));
+            horses.Add(new Horse("Horse 2", horse2Name, horse2Odd, h2F, h2A, h2P, h2PN));
+            horses.Add(new Horse("Horse 3", horse3Name, horse3Odd, h3F, h3A, h3P, h3PN));
+            horses.Add(new Horse("Horse 4", horse4Name, horse4Odd, h4F, h4A, h4P, h4PN));
+            horses.Add(new Horse("Horse 5", horse5Name, horse5Odd, h5F, h5A, h5P, h5PN));
+            horses.Add(new Horse("Horse 6", horse6Name, horse6Odd, h6F, h6A, h6P, h6PN));
+
+            horseName.Add(horse1Name, horses[0]);
+            horseName.Add(horse2Name, horses[1]);
+            horseName.Add(horse3Name, horses[2]);
+            horseName.Add(horse4Name, horses[3]);
+            horseName.Add(horse5Name, horses[4]);
+            horseName.Add(horse6Name, horses[5]);
+
             getFakePossibility();
             getSum();
             getPossibility();
@@ -242,7 +252,8 @@ namespace HorseRaceCalculator
         private void selectHorse(object sender, EventArgs e)
         {
             TextBox textBox = sender as TextBox;
-            HorseSelection subForm = new HorseSelection(horsePool, textBox.Text);
+            HorseSelection subForm = new HorseSelection(horsePool, horseName[textBox].id);
+            subForm.Show();
         }
 
         private void resetPressed(object sender, EventArgs e)
