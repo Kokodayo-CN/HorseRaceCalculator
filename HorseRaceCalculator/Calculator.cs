@@ -290,6 +290,10 @@ namespace HorseRaceCalculator
             {
                 horseList.Close();
             }
+        }
+
+        private void exited (object sender, FormClosedEventArgs e)
+        {
             Initialize.OnShutdown();
         }
 

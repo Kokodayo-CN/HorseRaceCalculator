@@ -2108,6 +2108,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Horse Racing Calculator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.exiting);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.exited);
             this.Load += new System.EventHandler(this.opening);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
