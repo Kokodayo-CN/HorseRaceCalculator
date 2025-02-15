@@ -94,7 +94,6 @@
       <DependentUpon>HorseList.cs</DependentUpon>
     </Compile>
     <Compile Include="HorsePool.cs" />
-    <Compile Include="Initialize.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Calculator.resx">
