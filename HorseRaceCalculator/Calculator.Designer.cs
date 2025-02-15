@@ -357,7 +357,6 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -376,9 +375,9 @@
             this.panel28.Controls.Add(this.avgNum);
             this.panel28.Controls.Add(this.label85);
             this.panel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel28.Location = new System.Drawing.Point(229, 4);
+            this.panel28.Location = new System.Drawing.Point(229, 3);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(219, 182);
+            this.panel28.Size = new System.Drawing.Size(220, 184);
             this.panel28.TabIndex = 1;
             // 
             // avgNum
@@ -411,9 +410,9 @@
             this.panel27.Controls.Add(this.avgPerc);
             this.panel27.Controls.Add(this.label82);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel27.Location = new System.Drawing.Point(4, 4);
+            this.panel27.Location = new System.Drawing.Point(3, 3);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(218, 182);
+            this.panel27.Size = new System.Drawing.Size(220, 184);
             this.panel27.TabIndex = 0;
             // 
             // label83
