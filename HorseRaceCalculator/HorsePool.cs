@@ -74,7 +74,7 @@ namespace HorseRaceCalculator
                     { "Moon Rocks", 4 },
                     { "Mr.Worthwhile", 2 },
                     { "Mud Dragon", 5 },
-                    { "Night - time Mare", 16 },
+                    { "Night-time Mare", 16 },
                     { "Northern Lights", 15 },
                     { "Nuns Orders", 9 },
                     { "Ol' Skag", 28 },

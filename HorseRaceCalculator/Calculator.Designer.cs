@@ -58,11 +58,11 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.horse6Name = new System.Windows.Forms.TextBox();
-            this.horse5Name = new System.Windows.Forms.TextBox();
-            this.horse4Name = new System.Windows.Forms.TextBox();
-            this.horse3Name = new System.Windows.Forms.TextBox();
-            this.horse2Name = new System.Windows.Forms.TextBox();
+            this.horse6Name = new System.Windows.Forms.RichTextBox();
+            this.horse5Name = new System.Windows.Forms.RichTextBox();
+            this.horse4Name = new System.Windows.Forms.RichTextBox();
+            this.horse3Name = new System.Windows.Forms.RichTextBox();
+            this.horse2Name = new System.Windows.Forms.RichTextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.h6PN = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
@@ -189,7 +189,7 @@
             this.label61 = new System.Windows.Forms.Label();
             this.h1P = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.horse1Name = new System.Windows.Forms.TextBox();
+            this.horse1Name = new System.Windows.Forms.RichTextBox();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.accessList = new System.Windows.Forms.ToolStripMenuItem();
@@ -591,12 +591,12 @@
             // 
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 6;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66668F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.Controls.Add(this.horse6Name, 5, 1);
             this.tableLayoutPanel4.Controls.Add(this.horse5Name, 4, 1);
             this.tableLayoutPanel4.Controls.Add(this.horse4Name, 3, 1);
@@ -637,84 +637,98 @@
             this.tableLayoutPanel4.Location = new System.Drawing.Point(469, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 6;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 255F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 233F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 233F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1070, 1158);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // horse6Name
             // 
+            this.horse6Name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.horse6Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse6Name.DetectUrls = false;
             this.horse6Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horse6Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horse6Name.Location = new System.Drawing.Point(894, 85);
-            this.horse6Name.Multiline = true;
+            this.horse6Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse6Name.Location = new System.Drawing.Point(894, 90);
             this.horse6Name.Name = "horse6Name";
             this.horse6Name.ReadOnly = true;
-            this.horse6Name.Size = new System.Drawing.Size(172, 74);
+            this.horse6Name.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.horse6Name.Size = new System.Drawing.Size(172, 69);
             this.horse6Name.TabIndex = 41;
-            this.horse6Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse6Name.Text = "";
+            this.horse6Name.TextChanged += new System.EventHandler(this.align);
             this.horse6Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse5Name
             // 
+            this.horse5Name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.horse5Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse5Name.DetectUrls = false;
             this.horse5Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horse5Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horse5Name.Location = new System.Drawing.Point(716, 85);
-            this.horse5Name.Multiline = true;
+            this.horse5Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse5Name.Location = new System.Drawing.Point(716, 90);
             this.horse5Name.Name = "horse5Name";
             this.horse5Name.ReadOnly = true;
-            this.horse5Name.Size = new System.Drawing.Size(171, 74);
+            this.horse5Name.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.horse5Name.Size = new System.Drawing.Size(171, 69);
             this.horse5Name.TabIndex = 40;
-            this.horse5Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse5Name.Text = "";
+            this.horse5Name.TextChanged += new System.EventHandler(this.align);
             this.horse5Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse4Name
             // 
+            this.horse4Name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.horse4Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse4Name.DetectUrls = false;
             this.horse4Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horse4Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horse4Name.Location = new System.Drawing.Point(538, 85);
-            this.horse4Name.Multiline = true;
+            this.horse4Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse4Name.Location = new System.Drawing.Point(538, 90);
             this.horse4Name.Name = "horse4Name";
             this.horse4Name.ReadOnly = true;
-            this.horse4Name.Size = new System.Drawing.Size(171, 74);
+            this.horse4Name.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.horse4Name.Size = new System.Drawing.Size(171, 69);
             this.horse4Name.TabIndex = 39;
-            this.horse4Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse4Name.Text = "";
+            this.horse4Name.TextChanged += new System.EventHandler(this.align);
             this.horse4Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse3Name
             // 
+            this.horse3Name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.horse3Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse3Name.DetectUrls = false;
             this.horse3Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horse3Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horse3Name.Location = new System.Drawing.Point(360, 85);
-            this.horse3Name.Multiline = true;
+            this.horse3Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse3Name.Location = new System.Drawing.Point(360, 90);
             this.horse3Name.Name = "horse3Name";
             this.horse3Name.ReadOnly = true;
-            this.horse3Name.Size = new System.Drawing.Size(171, 74);
+            this.horse3Name.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.horse3Name.Size = new System.Drawing.Size(171, 69);
             this.horse3Name.TabIndex = 38;
-            this.horse3Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse3Name.Text = "";
+            this.horse3Name.TextChanged += new System.EventHandler(this.align);
             this.horse3Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse2Name
             // 
+            this.horse2Name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.horse2Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse2Name.DetectUrls = false;
             this.horse2Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horse2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horse2Name.Location = new System.Drawing.Point(182, 85);
-            this.horse2Name.Multiline = true;
+            this.horse2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse2Name.Location = new System.Drawing.Point(182, 90);
             this.horse2Name.Name = "horse2Name";
             this.horse2Name.ReadOnly = true;
-            this.horse2Name.Size = new System.Drawing.Size(171, 74);
+            this.horse2Name.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.horse2Name.Size = new System.Drawing.Size(171, 69);
             this.horse2Name.TabIndex = 37;
-            this.horse2Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse2Name.Text = "";
+            this.horse2Name.TextChanged += new System.EventHandler(this.align);
             this.horse2Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // panel24
@@ -1896,7 +1910,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(894, 1);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 80);
+            this.label6.Size = new System.Drawing.Size(172, 85);
             this.label6.TabIndex = 5;
             this.label6.Text = "Horse 6";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1908,7 +1922,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(716, 1);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 80);
+            this.label5.Size = new System.Drawing.Size(171, 85);
             this.label5.TabIndex = 4;
             this.label5.Text = "Horse 5";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1920,7 +1934,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(538, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 80);
+            this.label4.Size = new System.Drawing.Size(171, 85);
             this.label4.TabIndex = 3;
             this.label4.Text = "Horse 4";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1932,7 +1946,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(360, 1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 80);
+            this.label3.Size = new System.Drawing.Size(171, 85);
             this.label3.TabIndex = 2;
             this.label3.Text = "Horse 3";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1944,7 +1958,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(182, 1);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 80);
+            this.label2.Size = new System.Drawing.Size(171, 85);
             this.label2.TabIndex = 1;
             this.label2.Text = "Horse 2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1956,7 +1970,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 80);
+            this.label1.Size = new System.Drawing.Size(171, 85);
             this.label1.TabIndex = 0;
             this.label1.Text = "Horse 1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2135,16 +2149,19 @@
             // 
             // horse1Name
             // 
+            this.horse1Name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.horse1Name.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.horse1Name.DetectUrls = false;
             this.horse1Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horse1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horse1Name.Location = new System.Drawing.Point(4, 85);
-            this.horse1Name.Multiline = true;
+            this.horse1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horse1Name.Location = new System.Drawing.Point(4, 90);
             this.horse1Name.Name = "horse1Name";
             this.horse1Name.ReadOnly = true;
-            this.horse1Name.Size = new System.Drawing.Size(171, 74);
+            this.horse1Name.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.horse1Name.Size = new System.Drawing.Size(171, 69);
             this.horse1Name.TabIndex = 36;
-            this.horse1Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.horse1Name.Text = "";
+            this.horse1Name.TextChanged += new System.EventHandler(this.align);
             this.horse1Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // toolStripContainer1
@@ -2454,12 +2471,12 @@
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem accessList;
         private System.Windows.Forms.ToolStripMenuItem reset;
-        private System.Windows.Forms.TextBox horse6Name;
-        private System.Windows.Forms.TextBox horse5Name;
-        private System.Windows.Forms.TextBox horse3Name;
-        private System.Windows.Forms.TextBox horse2Name;
-        private System.Windows.Forms.TextBox horse1Name;
-        private System.Windows.Forms.TextBox horse4Name;
+        private System.Windows.Forms.RichTextBox horse1Name;
+        private System.Windows.Forms.RichTextBox horse6Name;
+        private System.Windows.Forms.RichTextBox horse5Name;
+        private System.Windows.Forms.RichTextBox horse4Name;
+        private System.Windows.Forms.RichTextBox horse3Name;
+        private System.Windows.Forms.RichTextBox horse2Name;
     }
 }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace HorseRaceCalculator
 {
@@ -16,19 +17,19 @@ namespace HorseRaceCalculator
         private List<Horse> horses = new List<Horse>();
         private HorseList horseList = new HorseList();
         private Dictionary<string, byte> horsePool = HorsePool.Initialize();
-        private Dictionary<TextBox, Horse> horseName = new Dictionary<TextBox, Horse>();
+        private Dictionary<RichTextBox, Horse> horseName = new Dictionary<RichTextBox, Horse>();
 
         struct Horse
         {
             public String id;
-            public TextBox name;
+            public RichTextBox name;
             public NumericUpDown odd;
             public TextBox fake;
             public TextBox actual;
             public TextBox payout;
             public TextBox payoutN;
 
-            public Horse(String id, TextBox name, NumericUpDown odd, TextBox fake, TextBox actual, TextBox payout, TextBox payoutN)
+            public Horse(String id, RichTextBox name, NumericUpDown odd, TextBox fake, TextBox actual, TextBox payout, TextBox payoutN)
             {
                 this.id = id;
                 this.name = name;
@@ -251,7 +252,7 @@ namespace HorseRaceCalculator
 
         private void selectHorse(object sender, EventArgs e)
         {
-            TextBox textBox = sender as TextBox;
+            RichTextBox textBox = sender as RichTextBox;
             HorseSelection subForm = new HorseSelection(horsePool, horseName[textBox].id);
 
             subForm.FormClosing += delegate
@@ -304,6 +305,39 @@ namespace HorseRaceCalculator
             horse4Odd.Value = 1;
             horse5Odd.Value = 1;
             horse6Odd.Value = 1;
+        }
+
+        private void align(object sender, EventArgs e)
+        {
+            RichTextBox box = sender as RichTextBox;
+
+            if (box.Lines.Length == 1)
+            {
+                string[] text = box.Text.Split(' ');
+                if (text.Length == 2)
+                {
+                    box.Text = text[0] + "\n" + text[1];
+                }
+                else if (text.Length == 4)
+                {
+                    box.Text = text[0] + " " + text[1] + "\n" + text[2] + " " + text[3];
+                }
+                else
+                {
+                    if (text[0].Length <= text[2].Length)
+                    {
+                        box.Text = text[0] + " " + text[1] + "\n" + text[2];
+                    }
+                    else
+                    {
+                        box.Text = text[0] + "\n" + text[1] + " " + text[2];
+                    }
+                }
+            }
+
+            box.SelectAll();
+            box.SelectionAlignment = HorizontalAlignment.Center;
+            box.DeselectAll();
         }
 
         private void exiting(object sender, FormClosingEventArgs e)
