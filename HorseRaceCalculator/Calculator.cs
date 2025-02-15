@@ -15,6 +15,7 @@ namespace HorseRaceCalculator
         double sum;
         List<Horse> horses = new List<Horse>();
         HorseList horseList = new HorseList();
+        private Dictionary<string, byte> horsePool = HorsePool.Initialize();
 
         struct Horse
         {

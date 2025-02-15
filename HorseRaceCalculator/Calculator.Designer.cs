@@ -244,8 +244,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1079F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1542, 1064);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1542, 1164);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -264,8 +264,8 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 214F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 149F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 358F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 396F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(460, 1073);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(460, 1158);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // panel25
@@ -487,7 +487,7 @@
             this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel29.Location = new System.Drawing.Point(4, 728);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(452, 390);
+            this.panel29.Size = new System.Drawing.Size(452, 426);
             this.panel29.TabIndex = 6;
             // 
             // resultPayout
@@ -628,8 +628,8 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 255F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 233F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1070, 1073);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 233F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1070, 1158);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // panel24
@@ -641,7 +641,7 @@
             this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel24.Location = new System.Drawing.Point(894, 809);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(172, 260);
+            this.panel24.Size = new System.Drawing.Size(172, 345);
             this.panel24.TabIndex = 35;
             // 
             // h6PN
@@ -693,7 +693,7 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(716, 809);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(171, 260);
+            this.panel23.Size = new System.Drawing.Size(171, 345);
             this.panel23.TabIndex = 34;
             // 
             // h5PN
@@ -745,7 +745,7 @@
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(538, 809);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(171, 260);
+            this.panel22.Size = new System.Drawing.Size(171, 345);
             this.panel22.TabIndex = 33;
             // 
             // h4PN
@@ -797,7 +797,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(360, 809);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(171, 260);
+            this.panel21.Size = new System.Drawing.Size(171, 345);
             this.panel21.TabIndex = 32;
             // 
             // h3PN
@@ -849,7 +849,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel20.Location = new System.Drawing.Point(182, 809);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(171, 260);
+            this.panel20.Size = new System.Drawing.Size(171, 345);
             this.panel20.TabIndex = 31;
             // 
             // h2PN
@@ -1999,7 +1999,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(4, 809);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(171, 260);
+            this.panel19.Size = new System.Drawing.Size(171, 345);
             this.panel19.TabIndex = 30;
             // 
             // h1PN
@@ -2050,13 +2050,13 @@
             // 
             this.toolStripContainer1.ContentPanel.AutoScroll = true;
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1542, 1064);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1542, 1164);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 53);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(1542, 1064);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1542, 1164);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             this.toolStripContainer1.TopToolStripPanelVisible = false;
@@ -2095,15 +2095,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1542, 1117);
+            this.ClientSize = new System.Drawing.Size(1542, 1217);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menu;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1568, 1188);
-            this.MinimumSize = new System.Drawing.Size(1568, 1188);
+            this.MaximumSize = new System.Drawing.Size(1568, 1288);
+            this.MinimumSize = new System.Drawing.Size(1568, 1288);
             this.Name = "Calculator";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Horse Racing Calculator";
