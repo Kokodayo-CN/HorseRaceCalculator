@@ -2,7 +2,7 @@
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Kokodayo-CN/HorseRaceCalculator?label=stable&style=flat-square)](https://github.com/Kokodayo-CN/HorseRaceCalculator/releases/latest)
 ## What can it do?  
 The Calculator can calculate the actual odds for winning in horse races on GTA Online, allowing players to make better decision based on staistical results.  
-To initialize data required for a race, player is required to manually enter the odds of winning for all six horses. Player can also click on the "UNKNOWN" text and select the horses by names from the dropdown list.  
+To initialize data required for a race, player is required to manually enter the odds of winning for all six horses. Player can also click on the "UNSPECIFIED" text and select the horses by names from the dropdown list.  
 If the provided horse combination does not violate the game algorithm, the Calculator will automatically calculate the actual odds of winning for each horse, and suggest the player whether this race is profitable or not.  
 The Calculator will also process and suggest the most secure horse with the highest winning possibility. If the game is generally profitable, the Calculator will also suggest a more risky, but generally secure horse with better payout.  
 Player can use the calculated results to get a better picture of the current race, instead of being stuck on abstract odd figures.  
