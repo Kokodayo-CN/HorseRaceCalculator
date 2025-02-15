@@ -659,7 +659,7 @@
             this.horse6Name.Size = new System.Drawing.Size(172, 74);
             this.horse6Name.TabIndex = 41;
             this.horse6Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.horse6Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            this.horse6Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse5Name
             // 
@@ -673,7 +673,7 @@
             this.horse5Name.Size = new System.Drawing.Size(171, 74);
             this.horse5Name.TabIndex = 40;
             this.horse5Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.horse5Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            this.horse5Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse4Name
             // 
@@ -687,7 +687,7 @@
             this.horse4Name.Size = new System.Drawing.Size(171, 74);
             this.horse4Name.TabIndex = 39;
             this.horse4Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.horse4Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            this.horse4Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse3Name
             // 
@@ -701,7 +701,7 @@
             this.horse3Name.Size = new System.Drawing.Size(171, 74);
             this.horse3Name.TabIndex = 38;
             this.horse3Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.horse3Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            this.horse3Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // horse2Name
             // 
@@ -715,7 +715,7 @@
             this.horse2Name.Size = new System.Drawing.Size(171, 74);
             this.horse2Name.TabIndex = 37;
             this.horse2Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.horse2Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            this.horse2Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // panel24
             // 
@@ -2145,7 +2145,7 @@
             this.horse1Name.Size = new System.Drawing.Size(171, 74);
             this.horse1Name.TabIndex = 36;
             this.horse1Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.horse1Name.MouseClick += new System.Windows.Forms.MouseEventHandler(this.selectHorse);
+            this.horse1Name.DoubleClick += new System.EventHandler(this.selectHorse);
             // 
             // toolStripContainer1
             // 

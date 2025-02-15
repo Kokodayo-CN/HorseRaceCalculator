@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HorseSelection));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.horseDropBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.horseTag = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.horseTier = new System.Windows.Forms.TextBox();
-            this.horseOdd = new System.Windows.Forms.TextBox();
             this.comfirm = new System.Windows.Forms.Button();
+            this.horseOdd = new System.Windows.Forms.TextBox();
+            this.horseTier = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.horseTag = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.horseDropBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,75 +59,16 @@
             this.panel1.Size = new System.Drawing.Size(800, 491);
             this.panel1.TabIndex = 0;
             // 
-            // horseDropBox
+            // comfirm
             // 
-            this.horseDropBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horseDropBox.FormattingEnabled = true;
-            this.horseDropBox.Location = new System.Drawing.Point(33, 105);
-            this.horseDropBox.Name = "horseDropBox";
-            this.horseDropBox.Size = new System.Drawing.Size(735, 50);
-            this.horseDropBox.TabIndex = 0;
-            this.horseDropBox.SelectedIndexChanged += new System.EventHandler(this.selected);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 51);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Select Horse for ";
-            // 
-            // horseTag
-            // 
-            this.horseTag.AutoSize = true;
-            this.horseTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horseTag.Location = new System.Drawing.Point(467, 25);
-            this.horseTag.Name = "horseTag";
-            this.horseTag.Size = new System.Drawing.Size(172, 51);
-            this.horseTag.TabIndex = 2;
-            this.horseTag.Text = "Horse 1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(211, 170);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(383, 42);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Current Horse\'s Stats:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(425, 233);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(344, 42);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Chance of Winning:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(117, 233);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(202, 42);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Horse Tier:";
-            // 
-            // horseTier
-            // 
-            this.horseTier.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horseTier.Location = new System.Drawing.Point(119, 291);
-            this.horseTier.Name = "horseTier";
-            this.horseTier.ReadOnly = true;
-            this.horseTier.Size = new System.Drawing.Size(195, 49);
-            this.horseTier.TabIndex = 6;
-            this.horseTier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.comfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comfirm.Location = new System.Drawing.Point(205, 378);
+            this.comfirm.Name = "comfirm";
+            this.comfirm.Size = new System.Drawing.Size(376, 90);
+            this.comfirm.TabIndex = 8;
+            this.comfirm.Text = "Save && Return";
+            this.comfirm.UseVisualStyleBackColor = true;
+            this.comfirm.Click += new System.EventHandler(this.confirm);
             // 
             // horseOdd
             // 
@@ -139,15 +80,75 @@
             this.horseOdd.TabIndex = 7;
             this.horseOdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comfirm
+            // horseTier
             // 
-            this.comfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comfirm.Location = new System.Drawing.Point(212, 378);
-            this.comfirm.Name = "comfirm";
-            this.comfirm.Size = new System.Drawing.Size(376, 90);
-            this.comfirm.TabIndex = 8;
-            this.comfirm.Text = "Save && Return";
-            this.comfirm.UseVisualStyleBackColor = true;
+            this.horseTier.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseTier.Location = new System.Drawing.Point(119, 291);
+            this.horseTier.Name = "horseTier";
+            this.horseTier.ReadOnly = true;
+            this.horseTier.Size = new System.Drawing.Size(195, 49);
+            this.horseTier.TabIndex = 6;
+            this.horseTier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(117, 233);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(202, 42);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Horse Tier:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(425, 233);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(344, 42);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Chance of Winning:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(211, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(383, 42);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Current Horse\'s Stats:";
+            // 
+            // horseTag
+            // 
+            this.horseTag.AutoSize = true;
+            this.horseTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseTag.Location = new System.Drawing.Point(467, 25);
+            this.horseTag.Name = "horseTag";
+            this.horseTag.Size = new System.Drawing.Size(172, 51);
+            this.horseTag.TabIndex = 2;
+            this.horseTag.Text = "Horse 1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(143, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(341, 51);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Select Horse for ";
+            // 
+            // horseDropBox
+            // 
+            this.horseDropBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.horseDropBox.FormattingEnabled = true;
+            this.horseDropBox.Location = new System.Drawing.Point(33, 105);
+            this.horseDropBox.Name = "horseDropBox";
+            this.horseDropBox.Size = new System.Drawing.Size(735, 50);
+            this.horseDropBox.TabIndex = 0;
+            this.horseDropBox.SelectedIndexChanged += new System.EventHandler(this.selected);
             // 
             // HorseSelection
             // 

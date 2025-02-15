@@ -253,6 +253,15 @@ namespace HorseRaceCalculator
         {
             TextBox textBox = sender as TextBox;
             HorseSelection subForm = new HorseSelection(horsePool, horseName[textBox].id);
+
+            subForm.FormClosing += delegate
+            {
+                if (subForm.DialogResult == DialogResult.OK)
+                {
+                    textBox.Text = subForm.horseSelected;
+                }
+            };
+
             subForm.Show();
         }
 

@@ -12,11 +12,12 @@ namespace HorseRaceCalculator
 {
     public partial class HorseSelection : Form
     {
-        public string horseSelected;
+        public string horseSelected = "";
 
         public HorseSelection(Dictionary<string, byte> horses, string Namespace)
         {
             InitializeComponent();
+            this.DialogResult = DialogResult.Cancel;
 
             horseTag.Text = Namespace;
             horseDropBox.Text = "";
@@ -56,5 +57,15 @@ namespace HorseRaceCalculator
                 horseTier.Text = "Mid Tier";
             }
         }
+
+        private void confirm(object sender, EventArgs e)
+        {
+            if (horseSelected != "")
+            {
+                this.DialogResult = DialogResult.OK;
+            }
+            this.Close();
+        }
     }
 }
+
