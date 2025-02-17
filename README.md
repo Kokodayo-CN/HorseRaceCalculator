@@ -9,6 +9,7 @@ Player can use the calculated results to get a better picture of the current rac
 
 ## How To Use It?  
 Simply head to "Release" and download "Calculator.exe" from the latest release. You can then run the Calculator directly without installation or Internet connection. The Calculator may spend longer time when booting up for the first time for initialization. This is normal, and booting time for subsequent launches will be shorter.  
+Windows Defender may prompt and warn that this program is unrecognized. This is because that the Calculator is downloaded online, and I refuse to start a new business and spend hundreds just to get a certificate from Microsoft. It does not indicate that the Calculator contains any malicious code. Simply select "More Info", then select "Run Anyway".  
 
 ## Whan It CANNOT Do?  
 The Calculator can only calculate the actual **POSSIBILITIES** of winning for each race. It **DOES NOT** guarantee that the horse with the highest possibility of winning will actually win.  
