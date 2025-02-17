@@ -16,7 +16,6 @@ namespace HorseRaceCalculator
         private double sum;
         private bool isUserAction = true;
         private List<Horse> horses = new List<Horse>();
-        private HorseList horseList = new HorseList();
         private Dictionary<string, byte> horsePool = HorsePool.Initialize();
         private Dictionary<RichTextBox, Horse> horseName = new Dictionary<RichTextBox, Horse>();
 
@@ -262,7 +261,7 @@ namespace HorseRaceCalculator
 
         private void showList(object sender, EventArgs e)
         {
-            horseList.Show();
+            (new HorseList()).Show();
         }
 
         private void selectHorse(object sender, EventArgs e)
@@ -356,14 +355,6 @@ namespace HorseRaceCalculator
             box.SelectAll();
             box.SelectionAlignment = HorizontalAlignment.Center;
             box.DeselectAll();
-        }
-
-        private void exiting(object sender, FormClosingEventArgs e)
-        {
-            if (horseList.Visible)
-            {
-                horseList.Close();
-            }
         }
 
         private void getFakePossibility()
