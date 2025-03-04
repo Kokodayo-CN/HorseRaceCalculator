@@ -3,6 +3,8 @@
 ## WARNING  
 This project is no longer maintained by the developer. While it's functionalities will remain intact, if in further GTA Online updates more horses get added, or if odds link to horses change, those updates will not reflect on this Calulator.  
 In future update, the Calculator will allow user to edit the horse list independently without having to rely on updates, in case such situation happens.  
+### Why?
+Some motherf**ker on some public session got me banned AGAIN, so f*ck you Rockstar.  
 ## What Can It Do?  
 The Calculator can calculate the actual odds for winning in horse races on GTA Online, allowing players to make better decision based on staistical results.  
 To initialize data required for a race, player is required to manually enter the odds of winning for all six horses. Player can also click on the "NOT SPECIFIED" text and select the horses by names from the dropdown list.  
